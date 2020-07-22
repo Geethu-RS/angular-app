@@ -1,0 +1,18 @@
+.book-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+    .book-details{
+        cursor: pointer;
+        width: 15%;
+        height: 20%;
+        background-color: cadetblue;
+        text-align: center;
+        img{
+            width: 25px;
+            height: 15px;
+        }
+    }
+}

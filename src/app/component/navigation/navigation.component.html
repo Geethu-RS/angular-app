@@ -1,0 +1,46 @@
+<p class="horizontal-navbar">
+  <mat-toolbar class="toolbar">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <mat-form-field class="example-full-width" appearance="standard">
+      <input class="toolbar-search" type="text" placeholder="Search" matInput autocomplete="off">
+      <mat-icon class="search-icon" matSuffix>search</mat-icon>
+    </mat-form-field>
+    <span class="example-spacer"></span>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>more_vert</mat-icon>
+        </button> -->
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon profile">
+      <img class="profile-image" src="assets/images/avatar.jpeg">
+    </button>
+  </mat-toolbar>
+</p>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" class="sidenav-list">
+    <mat-nav-list *ngFor="let menu of navigationItems">
+      <a mat-list-item (click)="onItemSelected(menu)">
+        <mat-icon class="routeIcon">{{menu.icon}}</mat-icon>{{menu.label}}
+        <span fxFlex *ngIf="menu.items && menu.items.length">
+          <span fxFlex></span>
+          <mat-icon class="expandIcon" [@indicatorRotate]="menu.expanded ? 'expanded': 'collapsed'">
+            expand_more
+          </mat-icon>
+        </span>
+      </a>
+      <div *ngIf="menu.expanded">
+        <mat-nav-list *ngFor="let child of menu.items">
+          <a mat-list-item (click)="onItemSelected(child)"> {{child.label}}</a>
+        </mat-nav-list>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

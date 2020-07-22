@@ -1,0 +1,12 @@
+<div class="book">
+    <div class="book-list">
+        <div *ngFor="let booklist of books" class="book-details">
+            <div (click)="details(booklist)">
+                <h3>{{booklist.name}}</h3>
+                <h4>${{booklist.price}}</h4>
+            </div>
+            <img src="assets/icons/more.png" alt="more" (click)="more(booklist)">
+        </div>
+    </div>
+    <app-book-description *ngIf=showDetails [childData]="selectedbook"></app-book-description>
+</div>
