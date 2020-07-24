@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { ProductsRoutingModule } from './products-routing.module';
 import { ProductListComponent }  from './product-list/product-list.component'
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { RatingModule } from 'ng-starrating';
 
-const routes: Routes = [
-  { path: 'product-list', component: ProductListComponent},
-  { path: 'product-details', component: ProductDetailsComponent },
-  { path: 'product-add', component: ProductAddComponent },
-];
 @NgModule({
   declarations: [
     ProductListComponent,
@@ -18,8 +17,11 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule]
+    ProductsRoutingModule,
+    MatCardModule,
+    MatGridListModule,
+    MatIconModule,
+    RatingModule
+  ]
 })
 export class ProductsModule { }

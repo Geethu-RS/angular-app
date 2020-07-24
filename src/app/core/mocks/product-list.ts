@@ -1,0 +1,22 @@
+export const Product = [
+        {productTitle: 'Recipies', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book1.png', price: 189, productRating: 4},
+        {productTitle: 'Vintage', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book2.png', price: 120, productRating: 2},
+        {productTitle: 'Retro Design', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book3.png', price: 99, productRating: 1},
+        {productTitle: 'Blood Strom', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book4.png', price: 323, productRating: 4},
+        {productTitle: 'Top Destination', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book5.png', price: 234, productRating: 4},
+        {productTitle: 'Group Study', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book6.png', price: 412, productRating: 5},
+        {productTitle: 'Organisation', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book7.png', price: 123, productRating: 1},
+        {productTitle: 'Myths', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book8.png', price: 143, productRating: 4},
+        {productTitle: 'Your Texts', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book9.png', price: 242, productRating: 3},
+        {productTitle: 'Recipies', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book1.png', price: 154, productRating: 4},
+        {productTitle: 'Vintage', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book2.png', price: 134, productRating: 4},
+        {productTitle: 'Retro Design', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book3.png', price: 321, productRating: 3},
+        {productTitle: 'Blood Strom', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book4.png', price: 33, productRating: 4},
+        {productTitle: 'Top Destination', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book5.png', price: 45, productRating: 4},
+        {productTitle: 'Group Study', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book6.png', price: 322, productRating: 5},
+        {productTitle: 'Organisation', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book7.png', price: 343, productRating: 4},
+        {productTitle: 'Myths', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book8.png', price: 345, productRating: 2},
+        {productTitle: 'Your Texts', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book8.png', price: 356, productRating: 4},
+        {productTitle: 'Retro Design', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book3.png', price: 325, productRating: 1},
+        {productTitle: 'Vintage', productImage: 'http://demo.themeparrot.com/bookstore_new/images/themeparrot/books/book2.png', price: 443, productRating: 4}
+];

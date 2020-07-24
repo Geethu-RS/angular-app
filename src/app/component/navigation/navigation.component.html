@@ -1,24 +1,22 @@
-<p class="horizontal-navbar">
-  <mat-toolbar class="toolbar">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-    </button>
-    <mat-form-field class="example-full-width" appearance="standard">
-      <input class="toolbar-search" type="text" placeholder="Search" matInput autocomplete="off">
-      <mat-icon class="search-icon" matSuffix>search</mat-icon>
-    </mat-form-field>
-    <span class="example-spacer"></span>
-    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+<mat-toolbar class="toolbar">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </button>
+  <mat-form-field class="example-full-width" appearance="standard">
+    <input class="toolbar-search" type="text" placeholder="Search" matInput autocomplete="off">
+    <mat-icon class="search-icon" matSuffix>search</mat-icon>
+  </mat-form-field>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
             <mat-icon>more_vert</mat-icon>
         </button> -->
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>notifications</mat-icon>
-    </button>
-    <button mat-icon-button class="example-icon favorite-icon profile">
-      <img class="profile-image" src="assets/images/avatar.jpeg">
-    </button>
-  </mat-toolbar>
-</p>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>notifications</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon favorite-icon profile">
+    <img class="profile-image" src="assets/images/avatar.jpeg">
+  </button>
+</mat-toolbar>
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="side" class="sidenav-list">
     <mat-nav-list *ngFor="let menu of navigationItems">

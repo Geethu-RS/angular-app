@@ -8,9 +8,7 @@ import { NavigationComponent } from './component/navigation/navigation.component
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { MaterialModule } from './material.module';
-import { ProductsModule } from './modules/products/products.module';
-import { DashboardModule } from './modules/dashboard/dashboard.module';
-import { UsersModule } from './modules/users/users.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +21,7 @@ import { UsersModule } from './modules/users/users.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ProductsModule,
-    DashboardModule,
-    UsersModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

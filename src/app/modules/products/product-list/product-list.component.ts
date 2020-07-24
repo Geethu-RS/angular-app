@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BooksService } from '../../../core/services/books.service';
+import { ProductsService } from '../products.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-product-list',
@@ -7,16 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
-  books: any;
+  products: any;
   selectedbook: any;
   showDetails = false;
   constructor(
-    private bookService: BooksService,
+    private productsService: ProductsService,
     private router: Router
-  ) { }
+  ) { 
+    this.products = this.productsService.getProducts();
+  }
 
   ngOnInit(): void {
-    this.books = this.bookService.getBookList();
   }
 
   details(value) {

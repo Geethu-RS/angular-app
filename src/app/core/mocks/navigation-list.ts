@@ -10,15 +10,15 @@ export const navigation = [
         items: [
             {
                 label: 'Products',
-                link: '/product-list',
+                link: '/products',
             },
             {
                 label: 'Add Product',
-                link: 'product-add',
+                link: '/products/add',
             },
             {
                 label: 'Product Details',
-                link: '/product-details',
+                link: '/products/details',
             },
         ]
     },
@@ -28,7 +28,7 @@ export const navigation = [
         items: [
             {
                 label: 'User List',
-                link: '/user-list',
+                link: '/users',
             }
         ]
     }

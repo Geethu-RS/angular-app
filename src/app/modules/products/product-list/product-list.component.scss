@@ -1,18 +1,32 @@
-.book-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px;
-    .book-details{
-        cursor: pointer;
-        width: 15%;
-        height: 20%;
-        background-color: cadetblue;
-        text-align: center;
-        img{
-            width: 25px;
-            height: 15px;
+.product {
+    margin: 40px 20px 0px 20px;
+ .example-card {
+         width: 190px;
+    ::ng-deep .mat-card-header-text {
+        margin: 0px !important;
+    } 
+    .product-header{
+        float: right;
+        .mat-icon{
+            font-size: 20px;
+            margin-right: 3px;
+            color: #878787;
+            cursor: pointer;
         }
+    }
+    .product-image{
+        width: 160px;
+        margin: 0px 10px;
+    }
+    .product-name{
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .product-price{
+        line-height: 26px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fec107;
+    }
     }
 }
